@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Eater&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url(snake.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#score,
+#high-score {
+  font-family: "Eater", cursive;
+}
+
+#score {
+  position: absolute;
+  top: 9px;
+  left: 100px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+#high-score {
+  position: absolute;
+  top: 59px;
+  left: 100px;
+  font-size: 30px;
+  font-weight: bold;
+}
