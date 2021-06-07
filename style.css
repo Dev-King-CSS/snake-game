@@ -17,7 +17,7 @@
 }
 
 #score,
-#high-score {
+#highscoreBox {
   font-family: "Eater", cursive;
 }
 
@@ -29,10 +29,42 @@
   font-weight: bold;
 }
 
-#high-score {
+#highscoreBox {
   position: absolute;
   top: 59px;
   left: 100px;
   font-size: 30px;
   font-weight: bold;
 }
+
+#board {
+  background: linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.7));
+  width: 50rem;
+  height: 47.5rem;
+  border: 2px solid black;
+  display: grid;
+  grid-template-columns: repeat(18, 1fr);
+  grid-template-rows: repeat(18, 1fr);
+}
+
+.head {
+  background-color: #01bd01;
+  border: 2px solid black;
+  transform: scale(1.02); /*This is optional*/
+  border-radius: 9px;
+}
+
+.snake {
+  background-color: green;
+  border: 2px solid black;
+  border-radius: 9px;
+}
+
+/*Make sure it is apple :)*/
+.apple {
+  background: linear-gradient(red, purple);
+  border: 2px solid black;
+  border-radius: 70px 70px 100px 100px;
+}
+
+/*Now our game is playable ╰(*°▽°*)╯*/
